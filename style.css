@@ -3,3 +3,32 @@
     padding: 0;
     box-sizing: 0;
 }
+
+#pageWrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: ceter;
+    align-items: center;
+    height: 800px;
+    width: auto;
+    background-color: #4d4c4c;
+}
+
+#etchASketch {
+    display: flex;
+    align-self: center;
+    justify-content: center;
+    align-items: center;
+    height: 400px;
+    width: 650px;
+    margin: 100px;
+    padding-bottom: 40px;
+    background-color: #ce0101;
+}
+
+#canvas {
+    display: flex;
+    background-color: #e2dacf;
+    min-width: 80%;
+    min-height: 80%;
+}

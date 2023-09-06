@@ -11,7 +11,7 @@
     align-items: center;
     height: 800px;
     width: auto;
-    background-color: #4d4c4c;
+    background-color: #000000;
 }
 
 #etchASketch {
@@ -19,16 +19,16 @@
     align-self: center;
     justify-content: center;
     align-items: center;
-    height: 400px;
-    width: 650px;
+    height: 550px;
+    min-width: 550px;
     margin: 100px;
-    padding-bottom: 40px;
     background-color: #ce0101;
 }
 
 #canvas {
     display: flex;
     background-color: #e2dacf;
-    min-width: 80%;
-    min-height: 80%;
+    flex-wrap: wrap;
+    width: 512px;
+    height: 512px;
 }

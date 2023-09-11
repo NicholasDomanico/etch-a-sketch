@@ -15,6 +15,14 @@ function buildCanvas() {
         pixel.setAttribute("class", "pixel");
         canvas.appendChild(pixel);
         }
+    
+    let pixelList = document.getElementsByClassName("pixel");
+    let pixelArray = [...pixelList]
+    for(let i = 0; i < pixelArray.length; i++) {
+        pixelArray[i].addEventListener("click", function() {
+            pixelArray[i].style.backgroundColor = "black";
+        });
     }
+}
 
 buildCanvas();

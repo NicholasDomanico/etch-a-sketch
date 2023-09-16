@@ -68,11 +68,13 @@
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
-input {
+#colorPicker {
     margin: 5px;
     background-color: #000000;
     border-color: #000000;
-    cursor: pointer;
+    border-radius: 3px;
+    border-width: 1px;
+    cursor: pointer;   
 }
 
 .checkbox {

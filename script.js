@@ -49,12 +49,16 @@ function buildCanvas(canvasSize) {
 
 canvasSizeSlider.addEventListener("change", function() {
     let num = Number(this.value);
-    let display = document.querySelector("#canvasSizeDisplay");
-    display.innerHTML = `${num} X ${num}`;
     while (canvas.firstChild) {
         canvas.removeChild(canvas.lastChild);
     }
     buildCanvas(num);
+})
+
+canvasSizeSlider.addEventListener("input", function() {
+    let num = Number(this.value);
+    let display = document.querySelector("#canvasSizeDisplay");
+    display.innerHTML = `${num} X ${num}`;
 })
 
 buildCanvas(defaultCanvasSize);

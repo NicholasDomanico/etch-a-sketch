@@ -7,11 +7,11 @@
 #pageWrapper {
     display: flex;
     flex-direction: column;
-    justify-content: ceter;
+    justify-content: center;
     align-items: center;
     height: 800px;
     width: auto;
-    background-color: #000000;
+    background-color: #575555;
 }
 
 #etchASketch {
@@ -19,15 +19,16 @@
     align-self: center;
     justify-content: center;
     align-items: center;
-    height: 550px;
-    min-width: 550px;
-    margin: 100px;
+    height: 580px;
+    width: 580px;
+    margin: 30px;
     background-color: #ce0101;
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px;
 }
 
 #canvas {
     display: flex;
-    /*background-color: #e2dacf;*/
     background-color: black;
     flex-wrap: wrap;
     width: 512px;
@@ -36,8 +37,35 @@
 
 #options {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
+    width: 512px;
+    align-items: flex-end;
     color: white;
+}
+
+#sliderContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#checkboxContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#colorPickerContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#canvasSizeDisplay {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
 input {
@@ -48,13 +76,12 @@ input {
 }
 
 .checkbox {
-    height: 50px;
-    width: 50px;
+    height: 30px;
+    width: 30px;
     border-radius: 10px;
 }
 
-
-
 label {
     margin-right: 10px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
